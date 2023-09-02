@@ -1,0 +1,69 @@
+#HOMEWORK N1
+def square_properties(side_length):
+    print("area:", side_length * side_length)
+    print("perimeter:", 4 * side_length)
+
+
+side = float(input("type length of square: "))
+square_properties(side)
+ 
+
+
+#HOMEOWRK N2
+def triangle_perimeter(side_1, side_2, side_3):
+    perimeter = side_1 + side_2 + side_3
+    print("triangle perimeter:", perimeter)
+
+side_1 = float(input("Enter the length of the first side: "))
+side_2= float(input("Enter the length of the second side: "))
+side_3 = float(input("Enter the length of the third side: "))
+triangle_perimeter(side_1, side_2, side_3)
+
+#HOMEWORK N3
+from turtle import *
+
+speed(100)
+def drawing_square():
+    for i in range(4):
+        forward(200)
+        left(90)
+drawing_square()
+
+forward(70)
+left(90)
+forward(100)   
+right(90)
+forward(60)
+right(90)
+forward(100)
+
+penup()
+goto(200, 200)
+pendown()
+
+right(150)
+forward(200)
+left(120)
+forward(200)
+
+penup()
+goto(15, 170)
+pendown()
+left(30)
+forward(50)
+def window():
+    for i in range(3):
+        left(90)
+        forward(50)
+window()
+
+penup()
+goto(180, 170)
+pendown()
+def window_2():
+    for i in range(5):
+        forward(50)
+        left(90)
+window_2()
+
+exitonclick()
